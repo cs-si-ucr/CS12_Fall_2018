@@ -1,14 +1,11 @@
 ###### Written by John Pham
-###### Written/Modified by Josh Beto
-
-## Introduction to Streams / Problem Solving
+###### Written / Modified by Josh Beto
 
 
 ## Lesson Plan
 
 We will be covering new ways to access the input and output stream this week and going over problem solving
 
----
 
 ### Standard Input and Output (Using a keyboard)
 
