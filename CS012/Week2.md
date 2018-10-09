@@ -1,22 +1,100 @@
-###### Modified by Josh Beto
+###### Written by John Pham
+###### Written/Modified by Josh Beto
 
 ## Introduction to Streams / Problem Solving
 
 
-### Streams Intro: cout & cin
+## Lesson Plan
 
+We will be covering new ways to access the input and output stream this week and going over problem solving
+
+---
+
+### Standard Input and Output (Using a keyboard)
+
+* `#include <iostream>` to do standard input and output operations
 * ```cout``` and ```cin``` are *variables* provided by ```iostream```
-* ```cout``` is of type ```ostream```
-* ```cin``` is of type ```istream```
 
-* When we use ```cout <<```, we write to a source ```stdout```, your console
-* When we use ```cin >>```, we read from a source ```stdin```, your keyboard
+* Standard Output
+  * `cout` is an **ostream** object that allows you to use `<<`, the **insertion operator**
 
-* Sources for ```istream``` and ```ostream``` type variables can be different depending on where you want to read or write from.
-* Some examples of sources include: files, other programs, networks, etc.
+    * `cout` will write "words" to the buffer. The buffer prints to the console when ```std::flush``` or ```std::endl``` is written.
 
-### Buffer
-* Future lecture
+        * ```cpp
+            int x = 6;
+
+            cout << x << endl;
+            // user types in "hello world"
+            // only "hello" is stored in userInput
+            ```
+    * **Important Note:** 'cout' only prints to the console when the buffer is *flushed*. 
+
+        * ```cpp
+            int x = 6;
+
+            cout << x; // Does not print to console! Add an 'endl' to flush the buffer!
+            ```
+
+* Standard Input
+
+  * `cin` is an **istream** object that allows you to use `>>`, the **extraction operation**
+
+    * `cin` will only fetch "words" from the buffer. It will stop at whitespaces and newlines.
+
+      * ```cpp
+        string userInput;
+
+        cin >> userInput;
+        // user types in "hello world"
+        // only "hello" is stored in userInput
+        ```
+
+  * `getline()` is a function that reads a "line of words" from the buffer
+
+    * ```cpp
+      string userInput;
+
+      getline(cin, userInput);
+      //user types in "hello world"
+      // "hello world" gets stored in userInput
+      ```
+
+---
+
+### File Input and Output
+
+We can also use files as input for our programs and write to files rather than to the screen. We can accomplish this by using **file streams**.
+
+* `#include<fstream>` to do file input and output operations
+* File Input
+  * You need to instanstiate a `ifstream` object
+    * `ifstream inputFileStream;`
+  * To open a file, you will use the `open()` method
+    * `inputFileStream.open("myTextFile.txt")`
+  * You can check if the file opened properly by using the `is_open()` method
+    * ```cpp
+      if (inputFileStream.is_open()) {
+        cout << "File opened successfully!" << endl;
+      }
+      else {
+        cout << "File failed to open" << endl;
+      }
+      ```
+  * Once you have a file open, you can read from the from by using the **extraction operator**
+    * `inputFileStream >> myVar`
+  * When you're done reading from a file, it's good practice to close the stream by using the `close()` method
+    * `inputFileStream.close()`
+* File Output
+  * You need to instanstiate a `ofstream` object
+    * `ofstream outputFileStream`
+  * You can then create a new file by using the `open()` method
+    * `outputFileStream.open("output.txt");`
+  * You can check if the file was created using the `is_open()` method
+    * `outputFileStream.is_open() ? cout << "File opened" : "File failed to open";`
+  * You can write to the file using the **insertion operator**
+    * outputFileStream << "This text will be written to the file" << endl;
+
+---
 
 ### Operators
 
@@ -43,6 +121,7 @@ ostream& operator<< (double val);
 * *Challenge*: Why are you able to chain together multiple ```<<``` or ```>>``` respectively? 
 * *Hint*: Look back on what ```<<``` and ```>>``` return and the ```cin``` and ```cout``` types
 
+---
 
 ### Problem Solving Tips
 * If you get stuck on a part, skip to the parts you know and *abstract* the parts you do not know. *Abstract* means to understand what something does, but not think about how it is done. 
