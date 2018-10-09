@@ -24,7 +24,7 @@ We will be covering new ways to access the input and output stream this week and
             // user types in "hello world"
             // only "hello" is stored in userInput
             ```
-    * **Important Note:** 'cout' only prints to the console when the buffer is *flushed*. 
+    * **Important Note:** ```cout``` only prints to the console when the buffer is *flushed*. 
 
         * ```cpp
             int x = 6;
@@ -116,13 +116,15 @@ ostream& operator<< (double val);
 ```
 
 * *Challenge*: Why are you able to chain together multiple ```<<``` or ```>>``` respectively? 
-* *Hint*: Look back on what ```<<``` and ```>>``` return and the ```cin``` and ```cout``` types
+  * *Hint*: Look back on what ```<<``` and ```>>``` return and the ```cin``` and ```cout``` types
 
 ---
 
 ### Problem Solving Tips
 * If you get stuck on a part, skip to the parts you know and *abstract* the parts you do not know. *Abstract* means to understand what something does, but not think about how it is done. 
-* Example: You have a function ```bool isAcceptable(int x)``` and need to remove elements within a ```vector<int>``` *v* that are considered not acceptable. You can simply call ```isAcceptable(int x)``` to check for which elements to remove even if you do not know how to write ```bool isAcceptable(int x)```
+* Example: You have a function ```bool isAcceptable(int x)```
+* You need to remove elements within a ```vector<int>``` *v* that are considered not acceptable. 
+  * You can simply call ```isAcceptable(int x)``` to check for which elements to remove even if you do not know how to write ```bool isAcceptable(int x)```
 
 ### Mini Quiz
 * Part 1: Write a function to calculate the digital root of a number. The definition of a digital root can be found here: https://en.wikipedia.org/wiki/Digital_root
