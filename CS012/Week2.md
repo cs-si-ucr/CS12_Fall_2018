@@ -1,4 +1,3 @@
-###### Written by John Pham
 ###### Modified by Josh Beto
 
 ## Introduction to Streams / Problem Solving
