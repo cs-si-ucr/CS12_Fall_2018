@@ -1,4 +1,4 @@
-###### Written by Josh Beto
+###### Written by Josh Beto / John Pham
 
 
 ### Definitions
@@ -119,3 +119,32 @@ void reorder(vector<double> &, vector<double> &);
   are using `at(i+1)` but your loop condition is set at `i < v.size()`, meaning you are going one index over your max.
 
 * Sorting both `vectors` separately instead of together in `reorder`
+
+---
+
+### Testing
+
+As programmers, we need to strive to writing correct code. This means our code should work properly for any set of inputs.
+
+* Asserts
+  * `#include <cassert>`
+    * Need to include `cassert` to use the `assert` function
+  * `assert(func(a, b) == c)`
+    * This will test whether the output of `func(a, b)` equals `c`.
+
+```cpp
+#include <iostream>
+#include <math>
+using namespace std;
+
+int pow(int a, int b) {
+  return pow(a, b);
+}
+int main() {
+  assert(pow(2, 2) == 4);
+  assert(pow(2, 3) == 8);
+  assert(pow(3, 3) == 10); // this will throw an error
+
+  return 0;
+}
+```
