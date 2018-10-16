@@ -123,22 +123,22 @@ Items under the `public:` keyword can be accessed outside of the class while ite
 
     * Write a function that takes in a `vector<Animal>` and prints that vector. The function should output the content of each animal as follows:
         * Name: <name>
-          Species: <species>
-          Age: <age>
+        * Species: <species>
+        * Age: <age>
 
-         (Next Entry)
+        * (Next Entry)
 
     * Write a main that fills a`vector<Animal>` with the following information:
       * Name: Jessie
-        Species: Dog
-        Age: 3
+      * Species: Dog
+      * Age: 3
 
-        Name: Colbert
-        Species: Pig
-        Age: 5
+      * Name: Colbert
+      * Species: Pig
+      * Age: 5
 
-        Name Violet
-        Species: Horse
-        Age: 7
+      * Name Violet
+      * Species: Horse
+      * Age: 7
 
       * Print out the `vector<Animal>` according to the function specified above.

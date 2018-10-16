@@ -7,12 +7,15 @@
 
 ```cpp
 /*
-passes in the name of a file and two vectors (double) and stores in the first vector the flight-path angles (first column) and in the second vector the corresponding coefficients of lift (2nd column). If the file does not open properly, this function should output an error message and then call the exit function passing it an exit value of 1
+passes in the name of a file and two vectors (double) and stores in the first vector the flight-path angles (first column) 
+and in the second vector the corresponding coefficients of lift (2nd column). 
+If the file does not open properly, this function should output an error message and then call the exit function passing it an exit value of 1
 */
 void readData(const string &, vector<double> &, vector<double> &);
 
 /*
-passes in the requested flight-path angle along with the 2 vectors of data (flight-path angles and corresponding coefficients of lift) and returns the corresponding coefficient of lift.
+passes in the requested flight-path angle along with the 2 vectors of data (flight-path angles and 
+corresponding coefficients of lift) and returns the corresponding coefficient of lift.
 */
 double interpolation(double, const vector<double> &, const vector<double> &);
 
@@ -22,7 +25,8 @@ passes in the vector of flight-path angles and returns true if it stores the ang
 bool isOrdered(const vector<double> &);
 
 /*
-passes in both vectors of data and then reorders the data so that the flight-path angles are in ascending order while maintaining the correspondence between the flight-path angles and their corresponding coefficients of lift.
+passes in both vectors of data and then reorders the data so that the flight-path angles are in ascending 
+order while maintaining the correspondence between the flight-path angles and their corresponding coefficients of lift.
 */
 void reorder(vector<double> &, vector<double> &);
 ```
@@ -34,9 +38,9 @@ void reorder(vector<double> &, vector<double> &);
 * Instead of thinking of *flight-path* angles and *lift coefficients*, think instead in terms of *x* and *y* coordinates like math
 * i.e. Your input file:
   * 0.0 1.0
-    3.4 2.9
-    1.5 1.9
-    5.0 5.6
+  * 3.4 2.9
+  * 1.5 1.9
+  * 5.0 5.6
 
     The first column of the input file can be thought of as your *x-coordinate* and the second column as the *corresponding y-coordinate*.
     Notice how in this description, the *x* and *y* are considered together as a pair that describes a point, **NOT** as separate entities. 
@@ -56,17 +60,15 @@ void reorder(vector<double> &, vector<double> &);
 * To visualize this next example, I recommend graphing each data point by hand in paper to follow along:
   * i.e. Your input file:
     * 0.0 0.0
-      1.0 1.0
-      2.0 4.0
-      3.0 9.0
+    * 1.0 1.0
+    * 2.0 4.0
+    * 3.0 9.0
 
       * Now, let's say I wanted you to give me the estimated y-coordinate of an x-coordinate of 2.0. That would be really easy given our data; the x-coordinate of
         2.0 is already included, so we would just output 4.0 as our answer. There is *no need to estimate if we already have the data point asked for*. 
       * However, if I wanted the y-coordinate of an x-coordinate of 1.5, we would need to estimate the y-coordinate via linear interpolation. In this case, we 
-        would find the *closest point above and below our x-coordinate* and assume a *linear relationship (line) between these two points*. In our example, the
-        closest point above our x-coordinate of 1.5 is (2.0, 4.0) and the closes point below is (1.0, 1.0). Since our x-coordinate is halfway between these two 
-        coordinates, we know our estimated value of y is 2.5, giving us a coordinate of (1.5, 2.5). This can be easily seen visually if you draw a line between
-        the points (1.0, 1.0) and (2.0, 4.0). In a more complex linear interpolation, we would just use the formula: 
+        would find the *closest point above and below our x-coordinate*. In our example, the closest point above our x-coordinate of 1.5 is (2.0, 4.0) and the closes point below is (1.0, 1.0). Since our x-coordinate is halfway between these two coordinates, we know our estimated value of y is 2.5, giving us a coordinate of (1.5, 2.5). 
+      * This can be easily seen visually if you draw a line between the points (1.0, 1.0) and (2.0, 4.0). In a more complex linear interpolation, we would just use    the formula: 
           * f(b) = f(a) + ((b - a)/(c - a))(f(c) - f(a)).
             *    b = given x-coordinate
             * f(b) = estimated y-coordinated
@@ -82,16 +84,16 @@ void reorder(vector<double> &, vector<double> &);
   * **Tip**: Make sure you sort both `vectors` together instead of individually! Think of the flight-path(x-coord) and lift coefficient(y-coord) as a *single* point
     * i.e. Your input file
       * 3.0 9.0
-        1.0 6.0
-        2.0 4.0
-        4.0 7.0
+      * 1.0 6.0
+      * 2.0 4.0
+      * 4.0 7.0
 
         These points would get sorted as follows:
 
-        1.0 6.0
-        2.0 4.0
-        3.0 9.0
-        4.0 7.0
+      * 1.0 6.0
+      * 2.0 4.0
+      * 3.0 9.0
+      * 4.0 7.0
 
          * Notice how the first column (flight-path angles) are sorted in *ascending* order and keep their matching respective lift coefficient in the other vector index-wise.
 
