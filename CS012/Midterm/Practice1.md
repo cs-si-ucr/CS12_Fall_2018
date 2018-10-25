@@ -85,7 +85,7 @@ Create a class called `AttendanceSheet`.
       a string date, the current date of attendance
     * Stores a list of students that have signed in to class today
       * Students have an integer ID and a name
-    * Has a function that adds students to the attendance sheet. Each Student enrolled **must be unique**, no duplicate sign-ins!
+    * Has a function that adds students to the attendance sheet. Each student enrolled **must be unique**, no duplicate sign-ins!
     * Has a function that evaluates if the class is cancelled. A class is cancelled when the number of signed in is less
       than 20% of the total number of students enrolled.
     * Has a function that clears the attendance sheet for the next session
