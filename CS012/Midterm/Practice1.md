@@ -81,14 +81,20 @@ Define a class called `Wallet` that stores money
 Create a class called `AttendanceSheet`.
   * Define any neccessary structs or classes
   * Specifications:
-    * Constructor that takes in an integer, which is the number of students *enrolled* in the class
+    * Constructor that takes in an integer, which is the number of students *enrolled* in the class, and
+      a string date, the current date of attendance
     * Stores a list of students that have signed in to class today
       * Students have an integer ID and a name
     * Has a function that adds students to the attendance sheet. Each Student enrolled **must be unique**, no duplicate sign-ins!
     * Has a function that evaluates if the class is cancelled. A class is cancelled when the number of signed in is less
       than 20% of the total number of students enrolled.
     * Has a function that clears the attendance sheet for the next session
-
+    * Has a function that outputs the list of students to a file called 'attendance-<date>.txt' i.e. attendance-October-1st-2018
+      * The students will be printed out each on a new line, with their <name> followed by <SID>
+      * i.e.
+        Alice 1203
+        Bob 7820
+        ...
 
 
 **Problem 4:**
