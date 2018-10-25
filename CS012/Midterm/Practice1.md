@@ -117,7 +117,7 @@ Come up with a definition for a `University` class
 * Pass by reference vs. pass by value
 * What happens to the left hand side of the + operator when you overload it in a class?
   * i.e.
-  ``cpp
+  ```cpp
   class IntExample {
     private:
       int i;
