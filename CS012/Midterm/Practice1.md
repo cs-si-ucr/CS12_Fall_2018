@@ -34,11 +34,11 @@ Define a class called `Parser` that represents a parsed sentence. Each word in t
     * Changes a word at a given index. Does not return anything.
     ```cpp
     Parser p("This is a sentence");
-    p.changeWord(3, "string"); // Changes the vector<string> words to ["This", "is", "a", "string"]
+    p.changeWord(3, "string"); // Changes the `vector<string>` words to ["This", "is", "a", "string"]
     ```
     * Filters out parsed words based on a given word
     ```cpp
-    Parser p("This is not a sentence"); // Changes the vector<string> words to ["This", "is", "a", "sentence"]
+    Parser p("This is not a sentence"); // Changes the `vector<string>` words to ["This", "is", "a", "sentence"]
     p.filter("not");
     p.print();
     ```
@@ -89,8 +89,8 @@ Create a class called `AttendanceSheet`.
     * Has a function that evaluates if the class is cancelled. A class is cancelled when the number of signed in is less
       than 20% of the total number of students enrolled.
     * Has a function that clears the attendance sheet for the next session
-    * Has a function that outputs the list of students to a file called 'attendance-<date>.txt' i.e. attendance-October-1st-2018
-      * The students will be printed out each on a new line, with their <name> followed by <SID>
+    * Has a function that outputs the list of students to a file called `'attendance-<date>.txt'` i.e. attendance-October-1st-2018
+      * The students will be printed out each on a new line, with their `<name>` followed by `<SID>`
       * i.e.
       ```
         Alice 1203
@@ -114,7 +114,7 @@ Come up with a definition for a `University` class
     * The ability to add students by passing in the name of a file. Assume all new students are freshman. The file is ordered as follows:
       * Each line of the file denotes a different student.
       * Lines are ordered as follows:
-        * <SID> <major> <name>
+        * `<SID> <major> <name>`
     * The ability to remove students that are graduating at the end of the year.
     * The ability to add a professor by passing in a name and research specialty.
 

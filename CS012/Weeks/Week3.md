@@ -122,13 +122,14 @@ Items under the `public:` keyword can be accessed outside of the class while ite
       * *age* - how old the animal is
 
     * Write a function that takes in a `vector<Animal>` and prints that vector. The function should output the content of each animal as follows:
-        * Name: <name>
-        * Species: <species>
-        * Age: <age>
+        * Name: actual_name
+        * Species: actual_species
+        * Age: actual_age
 
         * (Next Entry)
 
     * Write a main that fills a`vector<Animal>` with the following information:
+    ```
        Name: Jessie
        Species: Dog
        Age: 3
@@ -140,5 +141,5 @@ Items under the `public:` keyword can be accessed outside of the class while ite
        Name Violet
        Species: Horse
        Age: 7
-
+    ```
       * Print out the `vector<Animal>` according to the function specified above.
