@@ -92,9 +92,11 @@ Create a class called `AttendanceSheet`.
     * Has a function that outputs the list of students to a file called 'attendance-<date>.txt' i.e. attendance-October-1st-2018
       * The students will be printed out each on a new line, with their <name> followed by <SID>
       * i.e.
+      ```
         Alice 1203
         Bob 7820
         ...
+      ```
 
 
 **Problem 4:**
