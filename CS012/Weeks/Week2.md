@@ -15,7 +15,7 @@ We will be covering new ways to access the input and output stream this week and
 * Standard Output
   * `cout` is an **ostream** object that allows you to use `<<`, the **insertion operator**
 
-    * `cout` will write "words" to the buffer. The buffer prints to the console when ```std::flush``` or ```std::endl``` is written.
+    * `cout` will write words to the buffer. The buffer prints to the console when ```std::flush``` or ```std::endl``` is written.
 
         * ```cpp
             int x = 6;
@@ -25,12 +25,6 @@ We will be covering new ways to access the input and output stream this week and
             // only "hello" is stored in userInput
             ```
     * **Important Note:** ```cout``` only prints to the console when the buffer is *flushed*. 
-
-        * ```cpp
-            int x = 6;
-
-            cout << x; // Does not print to console! Add an 'endl' to flush the buffer!
-            ```
 
 * Standard Input
 
