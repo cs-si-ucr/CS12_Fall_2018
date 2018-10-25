@@ -3,7 +3,7 @@
 
 **Problem 1:**
 
-Define a class called `Parser` that represents a parsed sentence.
+Define a class called `Parser` that represents a parsed sentence. Each word in the sentence is **whitespace character separated** like `'\n'` and `' '`
 
   * You should store a `vector<string> words` that represents each parsed word in a given sentence
 
