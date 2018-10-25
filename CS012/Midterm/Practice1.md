@@ -112,7 +112,7 @@ Come up with a definition for a `University` class
 
 **Conceptual Questions**
 
-* Why are you allowed to chain together the `<<` and `>>` operator? i.e. cout << "1" << "2" << "3" << endl;
+* Why are you allowed to chain together the `<<` and `>>` operator? i.e. `cout << "1" << "2" << "3" << endl;`
 * `const int add(const string &s) const` - What does each of the 3 `const` mean?
 * Pass by reference vs. pass by value
 * What happens to the left hand side of the + operator when you overload it in a class?
