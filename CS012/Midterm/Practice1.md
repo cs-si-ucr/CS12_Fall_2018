@@ -68,8 +68,8 @@ Define a class called `Wallet` that stores money
     Wallet w2(30, 80);
     w3 = w1 + w2; // w3, dollars = 36, cents = 50
     ```
-    * Accessor and getter for `unsigned dollars`
-    * Accessor and getter for `unsigned cents`
+    * Setter and getter for `unsigned dollars`
+    * Setter and getter for `unsigned cents`
     * Print function that prints out the dollars & cents as follows:
     ```cpp
     Wallet w(5, 70);
