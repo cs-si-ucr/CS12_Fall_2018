@@ -7,7 +7,7 @@ when you've realized you have broken a part of your code mid-assignment? For a m
 hitting `ctrl+z` until you hopefully come back to the version that isn't broken. Today, you will learn version control,
 which is a way of managing different code versions and iterations as you create your programs/applications.
 
-Git is a version-control system for tracking changes in your repository, the project.
+Git is a version-control system for tracking changes in your repository, your project.
 
 ## Your first repo
 
