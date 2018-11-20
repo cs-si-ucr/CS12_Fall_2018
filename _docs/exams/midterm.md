@@ -1,3 +1,8 @@
+---
+title: Midterms
+permalink: /docs/midterm/
+---
+
 ###### Written by Josh Beto
 
 

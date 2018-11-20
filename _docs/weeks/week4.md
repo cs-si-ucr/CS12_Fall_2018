@@ -1,3 +1,8 @@
+---
+title: Week 4 Discussion
+permalink: /docs/week4/
+---
+
 ###### Written by Josh Beto
 
 ## Intro
@@ -15,7 +20,7 @@ cout << *p << endl; // dereferences pointer and prints out 1
 **Note:** As best practice, *don't* leave a pointer uninitialized like so: `int* p;`, always initialize the pointer to reference another variable/object or `nullptr`!
 Uninitialized pointers have *garbage* addresses and may cause `segmentation faults` if you try to dereference them.
 
-## The -> operator
+## The `->` operator
 
 It's common practice that you want to have a pointer point to some object. To access an object's *member functions / data*, you need to first dereference the pointer
 to get the actual object, then do the `.` operator. This can become extremely tedious however, so a shortcut is using the `->` operator
