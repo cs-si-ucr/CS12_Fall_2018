@@ -42,7 +42,7 @@ int sum(int a[], a_size) {
 
 ## Logical Delete
 
-To 'delete' an element from an array, you have to instead shift the values from the right of the removed index
+To *delete* an element from an array, you have to instead shift the values from the right of the removed index
 to the left by one, and then decrement the total size by 1. This is known as a *logical delete* because you never
 reallocate another array and copy the values over to the new array's size, but rather update the size so you know
 what indicies are valid

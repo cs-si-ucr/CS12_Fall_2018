@@ -1,3 +1,8 @@
+---
+title: Github Intro
+permalink: /docs/github/
+---
+
 ###### Written by Josh Beto
 
 ## Git intro

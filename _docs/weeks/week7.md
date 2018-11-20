@@ -23,12 +23,18 @@ To delete this data, you simply call delete on the pointer. This **DOES NOT** de
 int main() {
     int* p = new int[6]; // allocates an array of size 6 on the heap, you have to delete this later on
 }
+```
+<br>
+**Warm-Up:** Identify whether the memory goes on the stack or heap
 
-Warm-Up: Identify whether the memory goes on the stack or heap
+```cpp
+Rectangle* r = new Rectangle(4, 3);
+```
 
-1. `Rectangle* r = new Rectangle(4, 3);`
-2. `ExampleObject* g(4, 3);`
-3. 
+```cpp
+ExampleObject* g(4, 3);
+```
+
 ```cpp
     int x = 6;
     int* g = &x
@@ -58,7 +64,7 @@ int main() {
 }
 ```
 
-## expand function
+## `expand` function
 
 Internally, your IntVector class is composed of a raw array. Whenever you need to increase the size of this array if it runs out of capacity,
 you can simply allocate a new array of a bigger size and copy the values over. This is known as *expanding*.
@@ -71,12 +77,12 @@ Process:
 
 This process will effectively construct an array of a greater capacity that still holds all your previous elements.
 
-## pop_back / clear
+## `pop_back` / `clear`
 
 Look back at last weeks' logical deletion section. Again, you don't need to actually delete the elements, you simply need to make them inaccessible by setting the `sz`.
 The rest of your functions will implement this *contract*, ensuring no indicies >= `sz` will ever be accessed by the user
 
-## push_back / resize / assign / insert
+## `push_back` / `resize` / `assign` / `insert`
 
 Process:
 1. Check if the indice given is even valid. If not, throw an error

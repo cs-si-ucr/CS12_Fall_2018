@@ -1,3 +1,8 @@
+---
+title: Program 1
+permalink: /docs/program1/
+---
+
 ###### Written by Josh Beto 
 ###### Testing Section from John Pham
 

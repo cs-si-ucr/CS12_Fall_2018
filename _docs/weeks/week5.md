@@ -9,7 +9,7 @@ permalink: /docs/week5/
 
 This week we'll be covering splitting our code into different files (.h, .cpp) and the Makefile
 
-## Preprocessor Directives - #include
+## Preprocessor Directives - `#include`
 
 A pre-processor directive is any statement beginning with a #. A common preprocessor directive you already use is the `#include`.
 When you run your compiler on your program, the compiler takes your source code and scans for any pre-processor directives first.
@@ -79,8 +79,8 @@ When your .cpp files are compiled, the compiler creates what is known as *object
 these .o files together to create a binary, executable program such as *a.out*. Understanding this process will prove helpful in understanding
 makefiles.
 
-**Note: Make sure to always `#include` the .h files, but compile the .cpp files!
----
+**Note:** Make sure to always `#include` the .h files, but compile the .cpp files!
+
 
 ## Makefiles
 
