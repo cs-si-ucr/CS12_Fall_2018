@@ -1,3 +1,8 @@
+---
+title: Week 5 Discussion
+permalink: /docs/week5/
+---
+
 ###### Written by Josh Beto
 
 # Lesson Plan

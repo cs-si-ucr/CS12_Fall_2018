@@ -1,3 +1,8 @@
+---
+title: Week 2 Discussion
+permalink: /docs/week2/
+---
+
 ###### Written by John Pham
 ###### Written / Modified by Josh Beto
 

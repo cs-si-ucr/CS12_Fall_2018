@@ -1,3 +1,8 @@
+---
+title: Week 8 Discussion
+permalink: /docs/week8/
+---
+
 ###### Written by Josh Beto
 
 # Lesson Plan

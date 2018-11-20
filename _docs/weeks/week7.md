@@ -1,3 +1,8 @@
+---
+title: Week 7 Discussion
+permalink: /docs/week7/
+---
+
 ###### Written by Josh Beto
 
 # Lesson Plan

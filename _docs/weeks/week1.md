@@ -1,3 +1,8 @@
+---
+title: Week 1 Discussion
+permalink: /docs/week1/
+---
+
 ###### Written by John Pham
 ###### Modified by Josh Beto
 
