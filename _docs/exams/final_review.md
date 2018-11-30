@@ -75,8 +75,8 @@ void pop_front() {
     delete head;
     head = head->next;
 }
-
 ```
+
 2. Explain any differences (if any) between these 3 functions
 ```cpp
 void print(IntNode* head) {
