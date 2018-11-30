@@ -68,6 +68,7 @@ You have the following `map` functions:
 
 ## Short Response
 1. Is there any problems with this code? Explain why there is or is not any problems:
+
 ```cpp
 void pop_front() {
     // Assume no tail, just head
@@ -78,6 +79,7 @@ void pop_front() {
 ```
 
 2. Explain any differences (if any) between these 3 functions
+
 ```cpp
 void print(IntNode* head) {
     if (head == nullptr) {
@@ -100,7 +102,9 @@ void print(IntNode* head) {
     print(head->next);
 }
 ```
+
 3. What does this code print out?
+
 ```cpp
 int a = 9;
 int* b = &a;
