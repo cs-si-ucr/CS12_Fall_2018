@@ -49,7 +49,7 @@ class Node {
 };
 ```
 
-#####You have access to the following data structure: `map`
+##### You have access to the following data structure: `map`
 A `map` is a data structure that stores a `key` - `value` pair, meaning you give the `map` a key, and it gives you a value, similar to how you give a `vector` an index and the `vector` returns the value at that index.
 You have the following `map` functions:
 `find(key)` - you pass in a key and it returns true if you've found it
