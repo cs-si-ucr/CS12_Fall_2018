@@ -53,11 +53,11 @@ class Node {
 ```
 
 ##### You have access to the following data structure: `map`
-A `map` is a data structure that stores a `key` - `value` pair, meaning you give the `map` a key, and it gives you a value, similar to how you give a `vector` an index and the `vector` returns the value at that index.
+A `map` is a data structure that stores a `key` - `value` pair, meaning you give the `map` a key and it gives you a value corresponding to that key, similar to how you give a `vector` an index and the `vector` returns the value at that index.
 You have the following `map` functions:
-* `find(key)` - you pass in a key and it returns true if you've found it
-* `insert(key, value)` - you insert a key value pair into the map
-* `remove(key)` - removes the `key`-`value` pair associated with that key
+* `find(key)` - you pass in a key and it returns the `end()` if the key was not found.
+* `[] operator` - you access or set a value into the designated key inside the `[]`
+
 <br>
 1. Implement the function `remove_duplicates(Node n)`. Do this in `O(n)` running time i.e. a single pass
 2. Implement the member function `IntList::remove_all(int n)`. This function removes all nodes that have the given value `n`. You are allowed to use `head` and `tail` and must update them appropriately for this function only.
