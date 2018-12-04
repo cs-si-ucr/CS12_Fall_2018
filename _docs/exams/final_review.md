@@ -8,7 +8,7 @@ permalink: /docs/final_review/
 
 ## Inheritance / Polymorphism
 
-Design and implement the following classes: `UCRPerson`, `UCRProfessor`, `UCRStudent`.
+Design and implement the following classes: `UCRPerson`, `UCRProfessor`, `UCRStudent`. **State any assumptions**
 
 A `UCRPerson` has the following specifications:
 `string`: name, id
@@ -19,13 +19,16 @@ Name: <name>, ID: <id>, Age: <age>
 ```
 Provide any appropriate getters and setters.
 <br>
-A `UCRStudent` has an `int` year, (freshman, sophomore, junior, senior), and a list of classes they are taking. You can use a given `Course` class without implementing it. A `Course` has the grade received as well as the course number. A `UCRStudent` has a getter function to return the `Course` with the highest grade achieved. A `UCRStudent` also has a function to return if a student is in academic probation. A student is in academic probation when their gpa for that quarter is below a 2.0. When a`UCRStudent` object calls `print()`, you should print in the following format followed by a newline - 
+A `UCRStudent` has an `int` year, (freshman, sophomore, junior, senior), and a list of classes they are taking. You can use a given `Course` class without implementing it. A `Course` has the grade received as well as the course number.
+* A `UCRStudent` has a getter function to return the `Course` with the highest grade achieved.
+* A `UCRStudent` also has a function to return if a student is in academic probation. A student is in academic probation when their gpa for that quarter is below a 2.0. 
+* When a`UCRStudent` object calls `print()`, you should print in the following format followed by a newline - 
 ```
 Status: Student, Year: <year>, Name: <name>, ID: <id>, Age: <age> 
 ```
 Provide any appropriate getters and setters. The year must be printed out as freshman, sophomore, junior, or senior, **not** 1, 2, 3, or 4.
 
-A `UCRProfessor` has a `string` department they are associated with and a list of courses they teach. When a `UCRStudent` object calls `print()`, you should print in the following format followed by a newline - 
+A `UCRProfessor` has a `string` department they are associated with and a list of courses they teach. When a `UCRProfessor` object calls `print()`, you should print in the following format followed by a newline - 
 ```
 Status: Professor, Department: <department>, Name: <name>, ID: <id>, Age: <age>
 ```
@@ -52,9 +55,9 @@ class Node {
 ##### You have access to the following data structure: `map`
 A `map` is a data structure that stores a `key` - `value` pair, meaning you give the `map` a key, and it gives you a value, similar to how you give a `vector` an index and the `vector` returns the value at that index.
 You have the following `map` functions:
-`find(key)` - you pass in a key and it returns true if you've found it
-`insert(key, value)` - you insert a key value pair into the map
-`remove(key)` - removes the `key`-`value` pair associated with that key
+* `find(key)` - you pass in a key and it returns true if you've found it
+* `insert(key, value)` - you insert a key value pair into the map
+* `remove(key)` - removes the `key`-`value` pair associated with that key
 <br>
 1. Implement the function `remove_duplicates(Node n)`. Do this in `O(n)` running time i.e. a single pass
 2. Implement the member function `IntList::remove_all(int n)`. This function removes all nodes that have the given value `n`. You are allowed to use `head` and `tail` and must update them appropriately for this function only.
