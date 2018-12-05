@@ -1,6 +1,6 @@
 ---
 title: Final Review Session
-permalink: /docs/review_session
+permalink: /docs/review_session/
 ---
 
 ###### Written by Josh Beto
@@ -34,7 +34,7 @@ To remove duplicates in a linked list with a single pass (single for loop), cons
 ```cpp
 void remove_duplicates(Node* n) {
     map <int, bool> m; // map that stores the data value seen (key) and whether it's been seen before (value).
-    Node* prev;
+    Node* prev = head;
     while (n != null) {
         if (m.find(n->data) != m.end()) { // If we found a duplicate
             prev->next = n->next;
