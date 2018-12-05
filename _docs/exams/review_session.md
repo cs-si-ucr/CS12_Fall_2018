@@ -4,23 +4,17 @@ permalink: /docs/review_session/
 ---
 
 ###### Written by Josh Beto
-###### Credit: https://www.geeksforgeeks.org/search-an-element-in-a-sorted-and-pivoted-array/
 
 
-## Linked List
+## Linked List - Remove Duplicates
 
 Given the following class definition of Node:
 
 ```cpp
 class Node {
-    private:
-        int value;
-        Node* next;
     public:
-        getNext();
-        setNext(Node* next);
-        getValue();
-        setValue(int value);
+        int data;
+        Node* next;
 };
 ```
 
@@ -57,8 +51,11 @@ Let's step through the code.
 <br>
 
 
-## Recursion
+## Recursion - Rotated Sorted Array
  
+
+https://www.geeksforgeeks.org/search-an-element-in-a-sorted-and-pivoted-array/
+
  Let's consider the following problem: Searching for an element in a rotated sorted array. First, let's define what a rotated sorted array is:
  ```cpp
 [3 4 5 1 2 3]
@@ -160,12 +157,14 @@ int pivotedBinarySearch(int arr[], int n, int key)
 } 
 ```
 
-* **Note:** To better understand recursion, visit week 8: https://cs-si-ucr.github.io/CS12_Fall_2018/docs/week8/
+* **Note:** To better understand recursion, visit week 8: 
+  https://cs-si-ucr.github.io/CS12_Fall_2018/docs/week8/
 
 
 ## Inheritance / Polymorphism
 
 * Polymorphism - A way to **generalize** different types of objects as a single kind of object. How this works:
+
 ```cpp
 class Animal {
     virtual void print() = 0;
@@ -185,4 +184,4 @@ class Cat : public Animal {
 ```
 
 If we call print() on different `Animal` objects, each call will evaluate during *runtime*. 
-* `protected` - derived classes can access these types of variables. One step above `private` but before `public`
+* `protected` - derived classes can access these types of variables.
